@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kata list</title>
+</head>
+<body>
+    <button onclick="k1()">Kata 1</button>
+    <br>
+    <br>
+    <button onclick="k2()">Kata 2</button>
+    <br>
+    <br>
+    <button onclick="k3()">Kata 3</button>
+    <br>
+    <br>
+    <button onclick="k4()">Kata 4</button>
+    <br>
+    <br>
+    <button onclick="k5()">Kata 5</button>
+    <br>
+    <br>
+    <button onclick="k6()">Kata 6</button>
+    <br>
+    <br>
+    <button onclick="k7()">Kata 7</button>
+    <br>
+    <br>
+    <button onclick="k8()">Kata 8</button>
+    <br>
+    <br>
+    <button onclick="k9()">Kata 9</button>
+    <br>
+    <br>
+    <button onclick="k10()">Kata 10</button>
+    <script>
+        function k1() {
+            for (var i = 1; i <= 20; i++) {
+                console.log(i);
+            }
+        }
+        function k2() {
+            for (var i = 1; i <= 20; i++) {
+                if (i % 2 == 0){
+                    console.log(i);
+                }
+            }
+        }
+        function k3() {
+            for (var i = 1; i <= 20; i++) {
+                if (i % 2 == 1){
+                    console.log(i);
+                }
+            }
+        }
+        function k4() {
+            for (var i = 1; i <= 100; i++) {
+                if (i % 5 == 0) {
+                    console.log(i);
+                }
+            }
+        }
+        function k5() {
+            for (var i = 1; i <= 100; i++) {
+                if (Math.pow(i, 2) <= 100) {
+                    console.log(Math.pow(i, 2));
+                }
+            }
+        }
+        function k6() {
+            for (var i = 20; i >= 1; i--) {
+                console.log(i);
+            }
+        }
+        function k7() {
+            for (var i = 20; i >= 1; i--) {
+                if (i % 2 == 0){
+                    console.log(i);
+                }
+            }
+        }
+        function k8() {
+            for (var i = 20; i >= 1; i--) {
+                if (i % 2 == 1){
+                    console.log(i);
+                }
+            }
+        }
+        function k9() {
+            for (var i = 100; i >= 1; i--) {
+                if (i % 5 == 0) {
+                    console.log(i);
+                }
+            }
+        }
+        function k10() {
+            for (var i = 100; i >= 1; i--) {
+                if (Math.pow(i, 2) <= 100) {
+                    console.log(Math.pow(i, 2));
+                }
+            }
+        }
+    </script>
+</body>
+</html>

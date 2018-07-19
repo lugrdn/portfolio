@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>High Low</title>
+</head>
+<body>
+    <h1>High Low</h1>
+    <p>Input a number from 1 to 100</p>
+    <input type='number' id='uNumberInput'>
+    <button id='startButton' onclick='highLow()'>Start</button>
+    <br>
+    <br>
+    <p>Computer: </p>
+    <span id='comText'></span>
+    <br>
+    <p>Is your number higher or lower or equal?</p>
+    <button id='Higher' onclick='nextGuess(1)'>Higher</button>
+    <button id='Lower' onclick='nextGuess(0)'>Lower</button>
+    <button id='Equal' onclick='nextGuess(2)'>Equal</button>
+    <script src='highlow.js'></script>
+</body>
+</html>

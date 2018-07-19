@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rolling Dice</title>
+</head>
+<body>
+    <h1>Dice Rolling</h1>
+    <button onclick='roll()'>Roll Dice</button>
+    <br>
+    <br>
+    <div id='results' style='display: none'>
+        <style>
+            .chart div {
+                font: 10px sans-serif;
+                background-color: steelblue;
+                text-align: right;
+                padding: 3px;
+                margin: 1px;
+                color: white;
+            }
+        </style>
+        <div class="chart">
+            <div style="width: 50%;" id='b2'></div>
+            <div style="width: 50%;" id='b3'></div>
+            <div style="width: 50%;" id='b4'></div>
+            <div style="width: 50%;" id='b5'></div>
+            <div style="width: 50%;" id='b6'></div>
+            <div style="width: 50%;" id='b7'></div>
+            <div style="width: 50%;" id='b8'></div>
+            <div style="width: 50%;" id='b9'></div>
+            <div style="width: 50%;" id='b10'></div>
+            <div style="width: 50%;" id='b11'></div>
+            <div style="width: 50%;" id='b12'></div>
+        </div>
+        <br>
+        <ul>
+            <li id='l2'></li>
+            <li id='l3'></li>
+            <li id='l4'></li>
+            <li id='l5'></li>
+            <li id='l6'></li>
+            <li id='l7'></li>
+            <li id='l8'></li>
+            <li id='l9'></li>
+            <li id='l10'></li>
+            <li id='l11'></li>
+            <li id='l12'></li>
+        </ul>
+    </div>
+    <script src='dice.js'></script>
+</body>
+</html>

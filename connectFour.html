@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connect Four</title>
+</head>
+
+<body>
+    <h1>Connect Four</h1>
+    <h3>Turn: <span id='turnText'>Black</span></h3>
+    <h3 id='winText'></h3>
+    <button onclick='restart()'>Restart</button>
+    <br>
+    <table>
+        <tr>
+            <td><button id='x0y0' onclick='gt(0,0)'> </button></td>
+            <td><button id='x0y1' onclick='gt(0,1)'> </button></td>
+            <td><button id='x0y2' onclick='gt(0,2)'> </button></td>
+            <td><button id='x0y3' onclick='gt(0,3)'> </button></td>
+            <td><button id='x0y4' onclick='gt(0,4)'> </button></td>
+            <td><button id='x0y5' onclick='gt(0,5)'> </button></td>
+            <td><button id='x0y6' onclick='gt(0,6)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x1y0' onclick='gt(1,0)'> </button></td>
+            <td><button id='x1y1' onclick='gt(1,1)'> </button></td>
+            <td><button id='x1y2' onclick='gt(1,2)'> </button></td>
+            <td><button id='x1y3' onclick='gt(1,3)'> </button></td>
+            <td><button id='x1y4' onclick='gt(1,4)'> </button></td>
+            <td><button id='x1y5' onclick='gt(1,5)'> </button></td>
+            <td><button id='x1y6' onclick='gt(1,6)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x2y0' onclick='gt(2,0)'> </button></td>
+            <td><button id='x2y1' onclick='gt(2,1)'> </button></td>
+            <td><button id='x2y2' onclick='gt(2,2)'> </button></td>
+            <td><button id='x2y3' onclick='gt(2,3)'> </button></td>
+            <td><button id='x2y4' onclick='gt(2,4)'> </button></td>
+            <td><button id='x2y5' onclick='gt(2,5)'> </button></td>
+            <td><button id='x2y6' onclick='gt(2,6)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x3y0' onclick='gt(3,0)'> </button></td>
+            <td><button id='x3y1' onclick='gt(3,1)'> </button></td>
+            <td><button id='x3y2' onclick='gt(3,2)'> </button></td>
+            <td><button id='x3y3' onclick='gt(3,3)'> </button></td>
+            <td><button id='x3y4' onclick='gt(3,4)'> </button></td>
+            <td><button id='x3y5' onclick='gt(3,5)'> </button></td>
+            <td><button id='x3y6' onclick='gt(3,6)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x4y0' onclick='gt(4,0)'> </button></td>
+            <td><button id='x4y1' onclick='gt(4,1)'> </button></td>
+            <td><button id='x4y2' onclick='gt(4,2)'> </button></td>
+            <td><button id='x4y3' onclick='gt(4,3)'> </button></td>
+            <td><button id='x4y4' onclick='gt(4,4)'> </button></td>
+            <td><button id='x4y5' onclick='gt(4,5)'> </button></td>
+            <td><button id='x4y6' onclick='gt(4,6)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x5y0' onclick='gt(5,0)'> </button></td>
+            <td><button id='x5y1' onclick='gt(5,1)'> </button></td>
+            <td><button id='x5y2' onclick='gt(5,2)'> </button></td>
+            <td><button id='x5y3' onclick='gt(5,3)'> </button></td>
+            <td><button id='x5y4' onclick='gt(5,4)'> </button></td>
+            <td><button id='x5y5' onclick='gt(5,5)'> </button></td>
+            <td><button id='x5y6' onclick='gt(5,6)'> </button></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>Black Wins</td>
+            <td>|</td>
+            <td>Red Wins</td>
+        </tr>
+        <tr>
+            <td id='xWins'>0</td>
+            <td>|</td>
+            <td id='oWins'>0</td>
+        </tr>
+    </table>
+    <script src='connectFour.js'></script>
+</body>
+
+</html>
